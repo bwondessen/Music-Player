@@ -86,5 +86,7 @@ let userData = {
 };
 
 const printGreeting = () => {
-    console.log("Hello there!")
+    console.log('Hello there!');
 }
+
+printGreeting();
