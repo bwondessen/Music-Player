@@ -101,6 +101,10 @@ const playSong = (id) => {
     audio.play();
 };
 
+const pauseSong = () => {
+    userData.songCurrentTime = audio.currentTime;
+};
+
 const renderSongs = (array) => {
     const songsHTML = array
         .map((song) => {
@@ -147,5 +151,4 @@ const sortSongs = () => {
     return userData?.songs;
 };
 
-
-renderSongs(userData?.songs);
+renderSongs(sortSongs());
